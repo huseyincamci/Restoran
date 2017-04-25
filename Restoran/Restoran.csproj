@@ -52,7 +52,7 @@
     <Compile Include="AnaForm.Designer.cs">
       <DependentUpon>AnaForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Masa.cs">
+    <Compile Include="Models\Masa.cs">
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="MasaDetayForm.cs">
@@ -69,7 +69,7 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Salon.cs">
+    <Compile Include="Models\Salon.cs">
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="SalonForm.cs">
@@ -84,7 +84,7 @@
     <Compile Include="SiparisForm.Designer.cs">
       <DependentUpon>SiparisForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Urun.cs" />
+    <Compile Include="Models\Urun.cs" />
     <Compile Include="UrunForm.cs">
       <SubType>Form</SubType>
     </Compile>
