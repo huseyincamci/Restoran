@@ -35,7 +35,13 @@ namespace Restoran
 
         private void MasaListeForm_FormClosing(object sender, FormClosingEventArgs e)
         {
-            this.Controls.Clear();
+            foreach (var masa in Salon.Masalar)
+            {
+                masa.Click -= Masa_Click;
+            }
+            this.Hide();
+            this.Parent = null;
+            e.Cancel = true; //hides the form, cancels closing event
         }
     }
 }

@@ -28,11 +28,14 @@ namespace Restoran
             Masa.Urunler.Add(urun);
             if(urun == null) return;
             lstvUrunler.Items.Add(urun.ListOlustur());
+            lblTutar.Text = Masa.Tutar.ToString("C2");
         }
 
         private void MasaDetayForm_FormClosing(object sender, FormClosingEventArgs e)
         {
-            this.Controls.Clear();
+            this.Hide();
+            this.Parent = null;
+            e.Cancel = true; //hides the form, cancels closing event
         }
     }
 }

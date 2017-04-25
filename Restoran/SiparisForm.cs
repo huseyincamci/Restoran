@@ -14,8 +14,8 @@ namespace Restoran
         {
             foreach (var salon in Salon.Salonlar)
             {
-                flwSalonlar.Controls.Add(salon);
                 salon.Click += Salon_Click;
+                flwSalonlar.Controls.Add(salon);
             }
         }
 
@@ -30,7 +30,13 @@ namespace Restoran
 
         private void SiparisForm_FormClosing(object sender, FormClosingEventArgs e)
         {
-            this.Controls.Clear();
+            foreach (var salon in Salon.Salonlar)
+            {
+                salon.Click -= Salon_Click;
+            }
+            this.Hide();
+            this.Parent = null;
+            e.Cancel = true; //hides the form, cancels closing event
         }
     }
 }

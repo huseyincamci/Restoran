@@ -120,6 +120,7 @@
             this.lblTutar.Size = new System.Drawing.Size(31, 24);
             this.lblTutar.TabIndex = 0;
             this.lblTutar.Text = "0₺";
+            this.lblTutar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // MasaDetayForm
             // 
